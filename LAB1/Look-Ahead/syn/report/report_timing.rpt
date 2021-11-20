@@ -1,0 +1,97 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIR_filter_LA
+Version: O-2018.06-SP4
+Date   : Fri Nov 19 20:41:13 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: B1[1] (input port clocked by myCLOCK)
+  Endpoint: ROUT/b_reg[13]
+            (rising edge-triggered flip-flop clocked by myCLOCK)
+  Path Group: myCLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIR_filter_LA      5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock myCLOCK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  B1[1] (in)                                              0.00       0.50 f
+  M4/IN2[1] (multiplier_Nin115_Nin213_0)                  0.00       0.50 f
+  M4/mult_20/b[1] (multiplier_Nin115_Nin213_0_DW_mult_tc_0)
+                                                          0.00       0.50 f
+  M4/mult_20/U475/ZN (INV_X1)                             0.12       0.62 r
+  M4/mult_20/U448/Z (XOR2_X2)                             0.20       0.82 r
+  M4/mult_20/U732/ZN (NAND2_X1)                           0.14       0.96 f
+  M4/mult_20/U542/ZN (OAI22_X1)                           0.08       1.04 r
+  M4/mult_20/U142/S (FA_X1)                               0.12       1.17 f
+  M4/mult_20/U504/ZN (AOI222_X1)                          0.13       1.29 r
+  M4/mult_20/U503/ZN (OAI222_X1)                          0.07       1.36 f
+  M4/mult_20/U502/ZN (AOI222_X1)                          0.11       1.47 r
+  M4/mult_20/U501/ZN (OAI222_X1)                          0.07       1.54 f
+  M4/mult_20/U500/ZN (AOI222_X1)                          0.10       1.64 r
+  M4/mult_20/U452/ZN (INV_X1)                             0.03       1.67 f
+  M4/mult_20/U499/ZN (AOI222_X1)                          0.09       1.76 r
+  M4/mult_20/U451/ZN (INV_X1)                             0.03       1.79 f
+  M4/mult_20/U498/ZN (AOI222_X1)                          0.09       1.88 r
+  M4/mult_20/U450/ZN (INV_X1)                             0.03       1.91 f
+  M4/mult_20/U497/ZN (AOI222_X1)                          0.09       2.00 r
+  M4/mult_20/U449/ZN (INV_X1)                             0.03       2.03 f
+  M4/mult_20/U496/ZN (AOI222_X1)                          0.09       2.12 r
+  M4/mult_20/U455/ZN (INV_X1)                             0.03       2.15 f
+  M4/mult_20/U46/CO (FA_X1)                               0.09       2.24 f
+  M4/mult_20/U45/CO (FA_X1)                               0.09       2.33 f
+  M4/mult_20/U44/CO (FA_X1)                               0.09       2.42 f
+  M4/mult_20/U43/CO (FA_X1)                               0.09       2.51 f
+  M4/mult_20/U42/CO (FA_X1)                               0.09       2.60 f
+  M4/mult_20/U41/CO (FA_X1)                               0.09       2.69 f
+  M4/mult_20/U40/CO (FA_X1)                               0.09       2.78 f
+  M4/mult_20/U39/CO (FA_X1)                               0.09       2.87 f
+  M4/mult_20/U38/CO (FA_X1)                               0.09       2.96 f
+  M4/mult_20/U37/CO (FA_X1)                               0.09       3.05 f
+  M4/mult_20/U36/CO (FA_X1)                               0.09       3.14 f
+  M4/mult_20/U35/CO (FA_X1)                               0.09       3.23 f
+  M4/mult_20/U34/CO (FA_X1)                               0.09       3.32 f
+  M4/mult_20/U33/CO (FA_X1)                               0.09       3.41 f
+  M4/mult_20/U489/Z (XOR2_X1)                             0.08       3.49 f
+  M4/mult_20/U487/Z (XOR2_X1)                             0.07       3.56 f
+  M4/mult_20/product[27] (multiplier_Nin115_Nin213_0_DW_mult_tc_0)
+                                                          0.00       3.56 f
+  M4/MULT[27] (multiplier_Nin115_Nin213_0)                0.00       3.56 f
+  A4/IN2[14] (adder_0)                                    0.00       3.56 f
+  A4/add_17/B[14] (adder_0_DW01_add_0)                    0.00       3.56 f
+  A4/add_17/U1_14/S (FA_X1)                               0.14       3.70 r
+  A4/add_17/SUM[14] (adder_0_DW01_add_0)                  0.00       3.70 r
+  A4/SUM[14] (adder_0)                                    0.00       3.70 r
+  ROUT/a[13] (reg_N14_0)                                  0.00       3.70 r
+  ROUT/U3/ZN (NAND2_X1)                                   0.03       3.73 f
+  ROUT/U2/ZN (OAI21_X1)                                   0.03       3.76 r
+  ROUT/b_reg[13]/D (DFFR_X1)                              0.01       3.77 r
+  data arrival time                                                  3.77
+
+  clock myCLOCK (rise edge)                               7.44       7.44
+  clock network delay (ideal)                             0.00       7.44
+  clock uncertainty                                      -0.07       7.37
+  ROUT/b_reg[13]/CK (DFFR_X1)                             0.00       7.37 r
+  library setup time                                     -0.04       7.33
+  data required time                                                 7.33
+  --------------------------------------------------------------------------
+  data required time                                                 7.33
+  data arrival time                                                 -3.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.56
+
+
+1

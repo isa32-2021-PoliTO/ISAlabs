@@ -1,0 +1,9 @@
+source /software/scripts/init_innovus17.11
+innovus &
+
+source design.globals
+set init_mmmc_file mmm_design.tcl
+init_design
+
+source commands.tcl
+exit

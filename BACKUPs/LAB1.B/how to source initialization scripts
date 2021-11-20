@@ -1,0 +1,11 @@
+# MENTOR MODELSIM
+source /software/scripts/init_msim6.2g
+vsim -&
+
+# SYNOPSYS DESIGN VISION
+source /software/scripts/init_synopsys_64.18
+design_vision &
+
+# CADENCE INNOVUS
+source /software/scripts/init_innovus17.11
+innovus &

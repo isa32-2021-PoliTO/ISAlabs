@@ -1,0 +1,127 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIR_filter
+Version: O-2018.06-SP4
+Date   : Fri Nov 19 20:20:51 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A_1[1] (input port clocked by myCLOCK)
+  Endpoint: ROUT/b_reg[13]
+            (rising edge-triggered flip-flop clocked by myCLOCK)
+  Path Group: myCLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIR_filter         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock myCLOCK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  A_1[1] (in)                                             0.00       0.50 f
+  M3/IN2[1] (multiplier_0)                                0.00       0.50 f
+  M3/mult_17/b[1] (multiplier_0_DW_mult_tc_0)             0.00       0.50 f
+  M3/mult_17/U473/ZN (INV_X1)                             0.12       0.62 r
+  M3/mult_17/U448/Z (XOR2_X2)                             0.20       0.82 r
+  M3/mult_17/U732/ZN (NAND2_X1)                           0.14       0.96 f
+  M3/mult_17/U542/ZN (OAI22_X1)                           0.08       1.04 r
+  M3/mult_17/U142/S (FA_X1)                               0.12       1.17 f
+  M3/mult_17/U504/ZN (AOI222_X1)                          0.13       1.29 r
+  M3/mult_17/U503/ZN (OAI222_X1)                          0.07       1.36 f
+  M3/mult_17/U502/ZN (AOI222_X1)                          0.11       1.47 r
+  M3/mult_17/U501/ZN (OAI222_X1)                          0.07       1.54 f
+  M3/mult_17/U500/ZN (AOI222_X1)                          0.10       1.64 r
+  M3/mult_17/U455/ZN (INV_X1)                             0.03       1.67 f
+  M3/mult_17/U499/ZN (AOI222_X1)                          0.09       1.76 r
+  M3/mult_17/U454/ZN (INV_X1)                             0.03       1.79 f
+  M3/mult_17/U498/ZN (AOI222_X1)                          0.09       1.88 r
+  M3/mult_17/U450/ZN (INV_X1)                             0.03       1.91 f
+  M3/mult_17/U497/ZN (AOI222_X1)                          0.09       2.00 r
+  M3/mult_17/U449/ZN (INV_X1)                             0.03       2.03 f
+  M3/mult_17/U496/ZN (AOI222_X1)                          0.09       2.12 r
+  M3/mult_17/U453/ZN (INV_X1)                             0.03       2.15 f
+  M3/mult_17/U46/CO (FA_X1)                               0.09       2.24 f
+  M3/mult_17/U45/CO (FA_X1)                               0.09       2.33 f
+  M3/mult_17/U44/CO (FA_X1)                               0.09       2.42 f
+  M3/mult_17/U43/CO (FA_X1)                               0.09       2.51 f
+  M3/mult_17/U42/CO (FA_X1)                               0.09       2.60 f
+  M3/mult_17/U41/CO (FA_X1)                               0.09       2.69 f
+  M3/mult_17/U40/CO (FA_X1)                               0.09       2.78 f
+  M3/mult_17/U39/CO (FA_X1)                               0.09       2.87 f
+  M3/mult_17/U38/CO (FA_X1)                               0.09       2.96 f
+  M3/mult_17/U37/S (FA_X1)                                0.13       3.09 r
+  M3/mult_17/product[22] (multiplier_0_DW_mult_tc_0)      0.00       3.09 r
+  M3/MULT[22] (multiplier_0)                              0.00       3.09 r
+  S1/IN2[9] (subtractor)                                  0.00       3.09 r
+  S1/sub_17/B[9] (subtractor_DW01_sub_0)                  0.00       3.09 r
+  S1/sub_17/U16/ZN (INV_X1)                               0.02       3.12 f
+  S1/sub_17/U2_9/CO (FA_X1)                               0.10       3.22 f
+  S1/sub_17/U2_10/S (FA_X1)                               0.18       3.39 r
+  S1/sub_17/DIFF[10] (subtractor_DW01_sub_0)              0.00       3.39 r
+  S1/SUB[10] (subtractor)                                 0.00       3.39 r
+  M1/IN1[10] (multiplier_2)                               0.00       3.39 r
+  M1/mult_17/a[10] (multiplier_2_DW_mult_tc_0)            0.00       3.39 r
+  M1/mult_17/U530/Z (XOR2_X1)                             0.09       3.49 r
+  M1/mult_17/U527/ZN (OAI22_X1)                           0.04       3.53 f
+  M1/mult_17/U127/S (FA_X1)                               0.14       3.67 r
+  M1/mult_17/U125/S (FA_X1)                               0.11       3.78 f
+  M1/mult_17/U124/S (FA_X1)                               0.11       3.89 f
+  M1/mult_17/U498/ZN (AOI222_X1)                          0.11       4.00 r
+  M1/mult_17/U452/ZN (INV_X1)                             0.03       4.03 f
+  M1/mult_17/U497/ZN (AOI222_X1)                          0.09       4.12 r
+  M1/mult_17/U451/ZN (INV_X1)                             0.03       4.15 f
+  M1/mult_17/U496/ZN (AOI222_X1)                          0.09       4.24 r
+  M1/mult_17/U455/ZN (INV_X1)                             0.03       4.27 f
+  M1/mult_17/U46/CO (FA_X1)                               0.09       4.36 f
+  M1/mult_17/U45/CO (FA_X1)                               0.09       4.45 f
+  M1/mult_17/U44/CO (FA_X1)                               0.09       4.54 f
+  M1/mult_17/U43/CO (FA_X1)                               0.09       4.63 f
+  M1/mult_17/U42/CO (FA_X1)                               0.09       4.72 f
+  M1/mult_17/U41/CO (FA_X1)                               0.09       4.81 f
+  M1/mult_17/U40/CO (FA_X1)                               0.09       4.90 f
+  M1/mult_17/U39/CO (FA_X1)                               0.09       4.99 f
+  M1/mult_17/U38/CO (FA_X1)                               0.09       5.08 f
+  M1/mult_17/U37/CO (FA_X1)                               0.09       5.17 f
+  M1/mult_17/U36/CO (FA_X1)                               0.09       5.26 f
+  M1/mult_17/U35/CO (FA_X1)                               0.09       5.36 f
+  M1/mult_17/U34/CO (FA_X1)                               0.09       5.45 f
+  M1/mult_17/U33/S (FA_X1)                                0.15       5.59 r
+  M1/mult_17/product[26] (multiplier_2_DW_mult_tc_0)      0.00       5.59 r
+  M1/MULT[26] (multiplier_2)                              0.00       5.59 r
+  A1/IN1[13] (adder)                                      0.00       5.59 r
+  A1/add_17/A[14] (adder_DW01_add_0)                      0.00       5.59 r
+  A1/add_17/U3/ZN (INV_X1)                                0.03       5.62 f
+  A1/add_17/U5/ZN (OAI21_X1)                              0.04       5.66 r
+  A1/add_17/U1_14/S (FA_X1)                               0.11       5.78 f
+  A1/add_17/SUM[14] (adder_DW01_add_0)                    0.00       5.78 f
+  A1/SUM[14] (adder)                                      0.00       5.78 f
+  ROUT/a[13] (reg_N14_0)                                  0.00       5.78 f
+  ROUT/U9/ZN (NAND2_X1)                                   0.03       5.81 r
+  ROUT/U8/ZN (OAI21_X1)                                   0.03       5.84 f
+  ROUT/b_reg[13]/D (DFFR_X1)                              0.01       5.84 f
+  data arrival time                                                  5.84
+
+  clock myCLOCK (rise edge)                              11.84      11.84
+  clock network delay (ideal)                             0.00      11.84
+  clock uncertainty                                      -0.07      11.77
+  ROUT/b_reg[13]/CK (DFFR_X1)                             0.00      11.77 r
+  library setup time                                     -0.04      11.73
+  data required time                                                11.73
+  --------------------------------------------------------------------------
+  data required time                                                11.73
+  data arrival time                                                 -5.84
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.88
+
+
+1

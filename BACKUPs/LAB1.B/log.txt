@@ -1,0 +1,101 @@
+Welcome to LAB1 running script!
+This is the main menu of the script, you can choose:
+ 0. To run all scripts
+ For Direct-Form:
+  1. To run only Simulation and Synthesis
+  2. To run only Power Switching Simulation
+  3. To run only Planning and Power switching Simulation
+ For Look-Ahead form:
+  4. To run only Simulation and Synthesis
+  5. To run only Power Switching Simulation
+  6. To run only Planning and Power switching Simulation
+-1. To exit
+
+
+###############################
+# Starting Modelsim logic simulation of Direct-Form-II
+
+Reading /software/mentor/modelsim_6.2g/tcl/vsim/pref.tcl 
+
+# 6.2g
+
+# commands-rtl.do 
+# invalid command name "commands-rtl.do"
+ModelSim> # 
+# <EOF> 
+
+###############################
+# Starting Synopsys synthesis of Direct-Form-II
+
+
+###############################
+# Starting Modelsim switching simulation of Direct-Form-II
+
+Reading /software/mentor/modelsim_6.2g/tcl/vsim/pref.tcl 
+
+# 6.2g
+
+# commands-syn.do 
+# invalid command name "commands-syn.do"
+ModelSim> # 
+# <EOF> 
+
+###############################
+# Starting Synopsys power analysis of Direct-Form-II
+
+VCD to SAIF translator version O-2018.06-SP4 Synopsys, Inc.
+direct mapping all VCD instances
+processing header of VCD file: ../vcd/myiir_syn.vcd
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                Version O-2018.06-SP4 for linux64 - Nov 27, 2018
+
+                    Copyright (c) 1988 - 2018 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+
+###############################
+# Starting Innovus planning of Direct-Form-II
+
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+Options:	-files script.tcl -nowin 
+Date:		Fri Nov 19 19:22:56 2021
+Host:		localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Westmere E56xx/L56xx/X56xx (Nehalem-C) 4096KB)
+OS:		CentOS Linux release 7.6.1810 (Core) 
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+
+*** INTERRUPTED *** [signal 2]
+
+###############################
+# Starting Modelsim switching simulation of Direct-Form-II
+
+Reading /software/mentor/modelsim_6.2g/tcl/vsim/pref.tcl 
+
+# 6.2g
+
+# commands-inn.do 
+# invalid command name "commands-inn.do"
+ModelSim> # invalid command name "dgfg"
+ModelSim> # invalid command name "ff"
+ModelSim> ModelSim> 
