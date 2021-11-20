@@ -1,12 +1,10 @@
-./*/.*
 ./*/*/.*
 
+BACKUPs/
 
-./BACKUPs
+./*/*/Code\ Matlab
 
-./*/*/syn/Code\ Matlab
-
-./*/*/results
+./*/*/results/**
 
 ./*/*/sim/work
 ./*/*/sim/transcript
