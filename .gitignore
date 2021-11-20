@@ -1,0 +1,25 @@
+./*/*/.*
+
+./BACKUPs/
+
+./*/*/syn/Code\ Matlab/
+
+./*/*/results/
+
+./*/*/sim/work/
+./*/*/sim/transcript
+./*/*/sim/vsim.wlf
+./*/*/sim/wave.do
+
+./*/*/syn/work
+./*/*/syn/*.log
+./*/*/syn/*.svf
+./*/*/syn/*.txt
+
+./*/*/innovus/*.log*
+./*/*/innovus/*.cmd*
+./*/*/innovus/*.old
+./*/*/innovus/how\ to\ execute\ innovus\ with\ script
+./*/*/innovus/power*.db
+./*/*/innovus/power*.tcl
+./*/*/innovus/*.ptiavg
