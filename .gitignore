@@ -1,12 +1,15 @@
+./.*
+./*/.*
 ./*/*/.*
 
-./BACKUPs/
 
-./*/*/syn/Code\ Matlab/
+./BACKUPs
 
-./*/*/results/
+./*/*/syn/Code\ Matlab
 
-./*/*/sim/work/
+./*/*/results
+
+./*/*/sim/work
 ./*/*/sim/transcript
 ./*/*/sim/vsim.wlf
 ./*/*/sim/wave.do
@@ -23,3 +26,7 @@
 ./*/*/innovus/power*.db
 ./*/*/innovus/power*.tcl
 ./*/*/innovus/*.ptiavg
+
+./*/*.pdf
+./*/how\ to\ source\ initialization\ scripts
+./*/*.txt
