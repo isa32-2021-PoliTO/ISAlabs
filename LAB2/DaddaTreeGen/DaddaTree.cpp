@@ -1,7 +1,3 @@
-//
-// Created by repex on 13/11/2021.
-//
-
 #include <iostream>
 #include <cmath>
 #include <fstream>

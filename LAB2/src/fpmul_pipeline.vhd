@@ -71,14 +71,6 @@ ARCHITECTURE pipeline OF FPmul IS
    SIGNAL isZ_tab         : std_logic;
    SIGNAL isZ_tab_stage1  : std_logic;
    SIGNAL isZ_tab_stage2  : std_logic;
---	SIGNAL Pout1_A: std_logic_vector(31 downto 0);
---	SIGNAL Pout2_A: std_logic_vector(31 downto 0);
---	SIGNAL Pout3_A: std_logic_vector(31 downto 0);
---	SIGNAL Pout4_A: std_logic_vector(31 downto 0);
---	SIGNAL Pout1_B: std_logic_vector(31 downto 0);
---	SIGNAL Pout2_B: std_logic_vector(31 downto 0);
---	SIGNAL Pout3_B: std_logic_vector(31 downto 0);
---	SIGNAL Pout4_B: std_logic_vector(31 downto 0);
 
    -- Component Declarations
    COMPONENT FPmul_stage1
@@ -152,12 +144,6 @@ ARCHITECTURE pipeline OF FPmul IS
       FP_Z          : OUT    std_logic_vector (31 DOWNTO 0)
    );
    END COMPONENT;
-  -- COMPONENT reg 
---	GENERIC(n: natural);
---	PORT(    clk : in STD_LOGIC; 
---		 a : in STD_LOGIC_VECTOR(N-1 downto 0); 
---		 b :out STD_LOGIC_VECTOR(N-1 downto 0));
---   END COMPONENT;
 
    -- Optional embedded configurations
    -- pragma synthesis_off
@@ -170,20 +156,11 @@ ARCHITECTURE pipeline OF FPmul IS
 
 BEGIN
 
-	--pipe_reg_1_A: reg GENERIC MAP (N => 32) PORT MAP(clk, FP_A, Pout1_A);
-	--pipe_reg_2_A: reg GENERIC MAP (N => 32) PORT MAP(clk, Pout1_A, Pout2_A);
-	--pipe_reg_3_A: reg GENERIC MAP (N => 32) PORT MAP(clk, Pout2_A, Pout3_A);
-	--pipe_reg_4_A: reg GENERIC MAP (N => 32) PORT MAP(clk, Pout3_A, Pout4_A);
-	
-	--pipe_reg_1_B: reg GENERIC MAP (N => 32) PORT MAP(clk, FP_B, Pout1_B);
-	--pipe_reg_2_B: reg GENERIC MAP (N => 32) PORT MAP(clk, Pout1_B, Pout2_B);
-	--pipe_reg_3_B: reg GENERIC MAP (N => 32) PORT MAP(clk, Pout2_B, Pout3_B);
-	--pipe_reg_4_B: reg GENERIC MAP (N => 32) PORT MAP(clk, Pout3_B, Pout4_B);
    -- Instance port mappings.
    I1 : FPmul_stage1
       PORT MAP (
-         FP_A            => FP_A,       -- Pout4_A,
-         FP_B            => FP_B,       -- Pout4_B,
+         FP_A            => FP_A,
+         FP_B            => FP_B,
          clk             => clk,
          A_EXP           => A_EXP,
          A_SIG           => A_SIG,

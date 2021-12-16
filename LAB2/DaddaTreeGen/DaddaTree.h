@@ -1,7 +1,3 @@
-//
-// Created by Andrea Repetto on 13/11/2021.
-//
-
 #ifndef DADDATREEGEN_DADDATREE_H
 #define DADDATREEGEN_DADDATREE_H
 

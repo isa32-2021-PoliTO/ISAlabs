@@ -1,7 +1,3 @@
-//
-// Created by Andrea Repetto on 12/11/2021.
-//
-
 #ifndef DADDATREEGEN_LOGICS_H
 #define DADDATREEGEN_LOGICS_H
 

@@ -1,7 +1,3 @@
-//
-// Created by repex on 12/11/2021.
-//
-
 #include "Logics.h"
 
 //Signal member definitions ---------------------------------------------------
