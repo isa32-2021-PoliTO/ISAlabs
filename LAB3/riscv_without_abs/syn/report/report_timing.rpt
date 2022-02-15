@@ -1,0 +1,117 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : riscv
+Version: O-2018.06-SP4
+Date   : Tue Feb  8 19:39:34 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: RST_N (input port clocked by myCLOCK)
+  Endpoint: STAGE1/ProgramCounter/b_reg[31]
+            (rising edge-triggered flip-flop clocked by myCLOCK)
+  Path Group: myCLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock myCLOCK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 r
+  RST_N (in)                                              0.00       0.50 r
+  CU/Rst (HW_Control)                                     0.00       0.50 r
+  CU/U57/Z (BUF_X1)                                       0.13       0.63 r
+  CU/U52/ZN (NAND2_X1)                                    0.11       0.73 f
+  CU/U26/ZN (AND3_X1)                                     0.07       0.80 f
+  CU/U12/ZN (NAND2_X1)                                    0.04       0.84 r
+  CU/U5/ZN (INV_X1)                                       0.03       0.86 f
+  CU/U7/ZN (NOR3_X1)                                      0.10       0.96 r
+  CU/U3/ZN (INV_X1)                                       0.04       1.00 f
+  CU/SEL_MUX[0] (HW_Control)                              0.00       1.00 f
+  STAGE2/Sel_Mux[0] (stage_2)                             0.00       1.00 f
+  STAGE2/IMM_GEN/MuxSel[0] (ImmediateGenerator_N32)       0.00       1.00 f
+  STAGE2/IMM_GEN/MuxImmGen/SEL[0] (MUX_8_to_1_N32)        0.00       1.00 f
+  STAGE2/IMM_GEN/MuxImmGen/U1/ZN (INV_X1)                 0.05       1.05 r
+  STAGE2/IMM_GEN/MuxImmGen/U27/ZN (NOR3_X1)               0.03       1.09 f
+  STAGE2/IMM_GEN/MuxImmGen/U4/Z (BUF_X1)                  0.07       1.15 f
+  STAGE2/IMM_GEN/MuxImmGen/U37/ZN (AOI22_X1)              0.06       1.22 r
+  STAGE2/IMM_GEN/MuxImmGen/U40/ZN (NAND4_X1)              0.06       1.27 f
+  STAGE2/IMM_GEN/MuxImmGen/OUTPUT[0] (MUX_8_to_1_N32)     0.00       1.27 f
+  STAGE2/IMM_GEN/output[0] (ImmediateGenerator_N32)       0.00       1.27 f
+  STAGE2/ADDER/IN2[0] (Adder_Nbit_N32)                    0.00       1.27 f
+  STAGE2/ADDER/add_17/B[0] (Adder_Nbit_N32_DW01_add_0)
+                                                          0.00       1.27 f
+  STAGE2/ADDER/add_17/U1/ZN (AND2_X1)                     0.05       1.32 f
+  STAGE2/ADDER/add_17/U1_1/CO (FA_X1)                     0.09       1.41 f
+  STAGE2/ADDER/add_17/U1_2/CO (FA_X1)                     0.09       1.50 f
+  STAGE2/ADDER/add_17/U1_3/CO (FA_X1)                     0.09       1.59 f
+  STAGE2/ADDER/add_17/U1_4/CO (FA_X1)                     0.09       1.68 f
+  STAGE2/ADDER/add_17/U1_5/CO (FA_X1)                     0.09       1.77 f
+  STAGE2/ADDER/add_17/U1_6/CO (FA_X1)                     0.09       1.87 f
+  STAGE2/ADDER/add_17/U1_7/CO (FA_X1)                     0.09       1.96 f
+  STAGE2/ADDER/add_17/U1_8/CO (FA_X1)                     0.09       2.05 f
+  STAGE2/ADDER/add_17/U1_9/CO (FA_X1)                     0.09       2.14 f
+  STAGE2/ADDER/add_17/U1_10/CO (FA_X1)                    0.09       2.23 f
+  STAGE2/ADDER/add_17/U1_11/CO (FA_X1)                    0.09       2.32 f
+  STAGE2/ADDER/add_17/U1_12/CO (FA_X1)                    0.09       2.41 f
+  STAGE2/ADDER/add_17/U1_13/CO (FA_X1)                    0.09       2.50 f
+  STAGE2/ADDER/add_17/U1_14/CO (FA_X1)                    0.09       2.59 f
+  STAGE2/ADDER/add_17/U1_15/CO (FA_X1)                    0.09       2.68 f
+  STAGE2/ADDER/add_17/U1_16/CO (FA_X1)                    0.09       2.77 f
+  STAGE2/ADDER/add_17/U1_17/CO (FA_X1)                    0.09       2.86 f
+  STAGE2/ADDER/add_17/U1_18/CO (FA_X1)                    0.09       2.95 f
+  STAGE2/ADDER/add_17/U1_19/CO (FA_X1)                    0.09       3.04 f
+  STAGE2/ADDER/add_17/U1_20/CO (FA_X1)                    0.09       3.13 f
+  STAGE2/ADDER/add_17/U1_21/CO (FA_X1)                    0.09       3.22 f
+  STAGE2/ADDER/add_17/U1_22/CO (FA_X1)                    0.09       3.32 f
+  STAGE2/ADDER/add_17/U1_23/CO (FA_X1)                    0.09       3.41 f
+  STAGE2/ADDER/add_17/U1_24/CO (FA_X1)                    0.09       3.50 f
+  STAGE2/ADDER/add_17/U1_25/CO (FA_X1)                    0.09       3.59 f
+  STAGE2/ADDER/add_17/U1_26/CO (FA_X1)                    0.09       3.68 f
+  STAGE2/ADDER/add_17/U1_27/CO (FA_X1)                    0.09       3.77 f
+  STAGE2/ADDER/add_17/U1_28/CO (FA_X1)                    0.09       3.86 f
+  STAGE2/ADDER/add_17/U1_29/CO (FA_X1)                    0.09       3.95 f
+  STAGE2/ADDER/add_17/U1_30/CO (FA_X1)                    0.09       4.04 f
+  STAGE2/ADDER/add_17/U1_31/S (FA_X1)                     0.13       4.17 r
+  STAGE2/ADDER/add_17/SUM[31] (Adder_Nbit_N32_DW01_add_0)
+                                                          0.00       4.17 r
+  STAGE2/ADDER/SUM[31] (Adder_Nbit_N32)                   0.00       4.17 r
+  STAGE2/BRANCH_ADDRESS[31] (stage_2)                     0.00       4.17 r
+  STAGE1/AddrJump[31] (stage_1_N32)                       0.00       4.17 r
+  STAGE1/Mux_1/IN2[31] (MUX_2_to_1_N32_1)                 0.00       4.17 r
+  STAGE1/Mux_1/U26/ZN (AOI22_X1)                          0.03       4.20 f
+  STAGE1/Mux_1/U25/ZN (INV_X1)                            0.03       4.23 r
+  STAGE1/Mux_1/OUTPUT[31] (MUX_2_to_1_N32_1)              0.00       4.23 r
+  STAGE1/ProgramCounter/a[31] (PC_N32)                    0.00       4.23 r
+  STAGE1/ProgramCounter/U13/ZN (NAND2_X1)                 0.02       4.26 f
+  STAGE1/ProgramCounter/U12/ZN (OAI21_X1)                 0.03       4.29 r
+  STAGE1/ProgramCounter/b_reg[31]/D (DFFR_X1)             0.01       4.30 r
+  data arrival time                                                  4.30
+
+  clock myCLOCK (rise edge)                               6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.07       5.93
+  STAGE1/ProgramCounter/b_reg[31]/CK (DFFR_X1)            0.00       5.93 r
+  library setup time                                     -0.04       5.89
+  data required time                                                 5.89
+  --------------------------------------------------------------------------
+  data required time                                                 5.89
+  data arrival time                                                 -4.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.59
+
+
+1
