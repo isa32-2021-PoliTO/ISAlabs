@@ -1,0 +1,12 @@
+RISC_WITH_ABS
+CLKs=96
+ISTs=62
+CLK/IST=1.55
+
+RISC_WITHOUT_ABS
+CLKs=123
+ISTs=83
+CLK/IST=1.48
+
+Clock / Inst != 1 => Jump OR Branch OR Stall
+Clock / Inst == 1 => Perfect pipe in our dreams

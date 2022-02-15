@@ -1,0 +1,60 @@
+# Synopsys script #
+###################
+
+# Analysis 
+
+remove_design -designs
+analyze -f vhdl -lib WORK {../control_unit/constants.vhd}
+analyze -f vhdl -lib WORK {../control_unit/HW_Control.vhd}
+analyze -f vhdl -lib WORK {../common/MUX_2_to_1.vhd}
+analyze -f vhdl -lib WORK {../common/MUX_4_to_1.vhd}
+analyze -f vhdl -lib WORK {../common/MUX_8_to_1.vhd}
+analyze -f vhdl -lib WORK {../common/PipeRegisterNbit.vhd}
+analyze -f vhdl -lib WORK {../stage1/Adder_4cells.vhd}
+analyze -f vhdl -lib WORK {../stage1/PC.vhd}
+analyze -f vhdl -lib WORK {../stage1/PipeRegisterNbit_IF_ID.vhd}
+analyze -f vhdl -lib WORK {../stage1/stage_1.vhd}
+analyze -f vhdl -lib WORK {../stage2/Adder_Nbit.vhd}
+analyze -f vhdl -lib WORK {../stage2/ImmediateGenerator.vhd}
+analyze -f vhdl -lib WORK {../stage2/registerfile.vhd}
+analyze -f vhdl -lib WORK {../stage2/stage_2.vhd}
+analyze -f vhdl -lib WORK {../stage2/XOR_Block.vhd}
+analyze -f vhdl -lib WORK {../stage3/alu.vhd}
+analyze -f vhdl -lib WORK {../stage3/stage_3.vhd}
+analyze -f vhdl -lib WORK {../stage4_5/stage_4_5.vhd}
+analyze -f vhdl -lib WORK {../top_entity/riscv.vhd}
+
+set power_preserve_rtl_hier_names true
+set PROJ_NAME riscv
+set PROJ_ARCH STRUCTURE
+
+# Elaboration
+elaborate $PROJ_NAME -arch $PROJ_ARCH -lib WORK > ./elaborate.txt
+uniquify
+link
+
+## Constraints
+create_clock -name myCLOCK -period 6 CLK
+set_dont_touch_network myCLOCK
+set_clock_uncertainty 0.07 [get_clocks myCLOCK]
+set_input_delay 0.5 -max -clock myCLOCK [remove_from_collection [all_inputs] CLK]
+set_output_delay 0.5 -max -clock myCLOCK [all_outputs]
+set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+set_load $OLOAD [all_outputs]
+
+## Synthesis
+compile
+
+## Reports
+report_timing > ./report/report_timing.rpt
+report_area > ./report/report_area.rpt
+
+#ungroup -all -flatten
+change_names -hierarchy -rules verilog
+write_sdf ../netlist/${PROJ_NAME}.sdf
+write -f verilog -hierarchy -output ../netlist/${PROJ_NAME}.v
+write_sdc ../netlist/${PROJ_NAME}.sdc
+
+
+
+

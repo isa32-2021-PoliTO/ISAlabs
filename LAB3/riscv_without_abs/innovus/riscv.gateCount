@@ -1,0 +1,24 @@
+Gate area 0.7980 um^2
+Level 0 Module riscv                                    Gates=     18520 Cells=    7687 Area=   14779.2 um^2
+Level 1 Module STAGE1                                   Gates=1049       Cells=422      Area=     837.1 um^2
+Level 2 Module STAGE1/ProgramCounter                    Gates=289        Cells=97       Area=     231.2 um^2
+Level 2 Module STAGE1/IF_ID_Pipe                        Gates=586        Cells=201      Area=     468.2 um^2
+Level 1 Module STAGE2                                   Gates=14009      Cells=5564     Area=   11179.7 um^2
+Level 2 Module STAGE2/IMM_GEN                           Gates=286        Cells=175      Area=     228.8 um^2
+Level 3 Module STAGE2/IMM_GEN/MuxImmGen                 Gates=286        Cells=175      Area=     228.8 um^2
+Level 2 Module STAGE2/ADDER                             Gates=168        Cells=33       Area=     134.6 um^2
+Level 2 Module STAGE2/RF                                Gates=12170      Cells=4870     Area=    9711.9 um^2
+Level 2 Module STAGE2/Pipe_ID_EX                        Gates=1294       Cells=436      Area=    1032.6 um^2
+Level 1 Module STAGE3                                   Gates=2368       Cells=1213     Area=    1889.9 um^2
+Level 2 Module STAGE3/MuxForwardA                       Gates=147        Cells=103      Area=     117.6 um^2
+Level 2 Module STAGE3/MuxForwardB                       Gates=152        Cells=109      Area=     121.8 um^2
+Level 2 Module STAGE3/MuxOperandA                       Gates=148        Cells=103      Area=     118.1 um^2
+Level 2 Module STAGE3/MuxOperandB                       Gates=149        Cells=103      Area=     119.2 um^2
+Level 2 Module STAGE3/ArithLogicUnit                    Gates=1142       Cells=580      Area=     911.3 um^2
+Level 3 Module STAGE3/ArithLogicUnit/lt_26              Gates=122        Cells=107      Area=      97.9 um^2
+Level 3 Module STAGE3/ArithLogicUnit/sub_22             Gates=189        Cells=65       Area=     151.4 um^2
+Level 3 Module STAGE3/ArithLogicUnit/add_21             Gates=169        Cells=34       Area=     135.4 um^2
+Level 2 Module STAGE3/IF_ID_Pipe                        Gates=629        Cells=215      Area=     501.9 um^2
+Level 1 Module STAGE4_5                                 Gates=697        Cells=273      Area=     556.7 um^2
+Level 2 Module STAGE4_5/IF_ID_Pipe                      Gates=621        Cells=207      Area=     495.6 um^2
+Level 1 Module CU                                       Gates=351        Cells=171      Area=     280.1 um^2
